@@ -31,6 +31,7 @@ public class P001 {
                  int diff=target-num;
                  if (map.containsKey(diff)){
                      Vector<Integer> indices=map.get(diff);
+                     //one thing to pay attention to is diff may coincide with num
                      if (diff!=num && indices.size()>0){
                          /*
                          int mi=min(indices.get(0),index);
